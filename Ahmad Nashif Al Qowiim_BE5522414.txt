@@ -1,0 +1,33 @@
+Program Order Makanan/Minuman via Online
+
+
+START
+INPUT tujuan (name and adress)
+THEN
+CHOOSE "Makanan or Minuman"
+	IF Makanan 
+		SEARCH makanan
+	ELSE 
+		SEARCH minuman
+THEN
+DO hitung total
+THEN 
+IF "konfirmasi pesanan" is false
+	BACK TO CHOOSE "Makanan or Minuman"
+ElSE
+CHOOSE "pilih pembayaran"
+IF "non-tunai"
+	DO bayar
+ELSE DO proses pemesanan
+THEN
+DO pengantaran pesanan
+THEN
+IF "sudah bayar" is true
+	DO pesanan diterima
+ELSE 
+	DO bayar
+	DO pesanan diterima
+END
+
+
+
